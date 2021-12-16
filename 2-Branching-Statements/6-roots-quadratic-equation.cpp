@@ -10,7 +10,11 @@ int main() {
 
   dis = b * b - 4 * a * c;
 
-  if (dis == 0) {
+  if (a == 0) {
+    cout << "The quadratic equation doesn't exists" << endl;
+  }
+
+  else if (dis == 0) {
     cout << "The roots are equal" << endl;
     r1 = r2 = -b / 2 * a;
     cout << "roots are : " << r1 << " and " << r2 << endl;
